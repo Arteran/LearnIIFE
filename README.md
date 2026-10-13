@@ -1,27 +1,26 @@
 # IIFE 
 
-> **IIFE** (Immediately Invoked Function Expression) - функція, яка викликається автоматично одразу після оголошення.
+> **IIFE** (Immediately Invoked Function Expression) - a function that runs as soon as it is defined.
 
-Головна суперсила IIFE - створення власної ізольованої області видимості (scope), що захищає глобальний простір імен від конфліктів змінних.
+The main superpower of an IIFE is creating its own isolated scope, preventing variable conflicts and keeping the global namespace clean.
 
 ---
 
-### Базовий синтаксис
+### Basic Syntax
 
 ```javascript
 (() => {
-  // Код виконується миттєво та ізольовано
+  // Code executes immediately and in isolation
 })();
 ```
 
 ---
 
-### Приклади в репозиторії
+### Repository Examples
 
-- **[`iife.js`](./iife.js)** - базовий синтаксис IIFE та виклик з параметрами (рекурсивний приклад).
-- **[`firstReason.js`](./firstReason.js)** - Причина 1: Не засмічувати глобальну область видимості (ізоляція змінних).
-- **[`secondReason.js`](./secondReason.js)** - Причина 2: Приватні змінні та замикання (data privacy / encapsulation).
-- **[`thirdReasonA.js`](./thirdReasonA.js)** - Причина 3: Патерн «Модуль» (Module Pattern).
-- **[`thirdReasonB.js`](./thirdReasonB.js)** - Патерн «Відкритий модуль» (Revealing Module Pattern).
-- **[`thirdReasonC.js`](./thirdReasonC.js)** - Впровадження простору імен (Namespace Injection Pattern).
-
+- **[`iife.js`](./iife.js)** - Basic IIFE syntax and invocation with parameters (recursive example).
+- **[`firstReason.js`](./firstReason.js)** - Reason 1: Does not pollute the global scope (variable isolation).
+- **[`secondReason.js`](./secondReason.js)** - Reason 2: Private variables and closures (data privacy / encapsulation).
+- **[`thirdReasonA.js`](./thirdReasonA.js)** - Reason 3: Module Pattern.
+- **[`thirdReasonB.js`](./thirdReasonB.js)** - The Revealing Module Pattern.
+- **[`thirdReasonC.js`](./thirdReasonC.js)** - Namespace Injection Pattern.
