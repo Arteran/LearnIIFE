@@ -1,3 +1,5 @@
+// Reason 1: Does not pollute the global scope
+
 const text = 'SomeText';
 
 (function () {
