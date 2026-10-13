@@ -1,12 +1,27 @@
-# JavaScript IIFE (Immediately Invoked Function Expression)
+# IIFE 
 
-**IIFE** — це функція в JavaScript, яка виконується одразу ж після свого створення. Вона допомагає створити окрему область видимості (scope) та уникнути засмічення глобального простору імен.
+> **IIFE** (Immediately Invoked Function Expression) - функція, яка викликається автоматично одразу після оголошення.
 
-## Приклади в репозиторії
+Головна суперсила IIFE - створення власної ізольованої області видимості (scope), що захищає глобальний простір імен від конфліктів змінних.
 
-- **[iife.js](file:///Users/arteran/local_Documents/Learn/IIFE/iife.js)** — базовий синтаксис IIFE та виклик з параметрами (рекурсивний приклад).
-- **[firstReason.js](file:///Users/arteran/local_Documents/Learn/IIFE/firstReason.js)** — **Причина 1:** Не засмічувати глобальну область видимості (ізоляція змінних).
-- **[secondReason.js](file:///Users/arteran/local_Documents/Learn/IIFE/secondReason.js)** — **Причина 2:** Приватні змінні та замикання (data privacy / encapsulation).
-- **[thirdReasonA.js](file:///Users/arteran/local_Documents/Learn/IIFE/thirdReasonA.js)** — **Причина 3:** Патерн «Модуль» (Module Pattern).
-- **[thirdReasonB.js](file:///Users/arteran/local_Documents/Learn/IIFE/thirdReasonB.js)** — Патерн «Відкритий модуль» (Revealing Module Pattern).
-- **[thirdReasonC.js](file:///Users/arteran/local_Documents/Learn/IIFE/thirdReasonC.js)** — Впровадження простору імен (Namespace Injection Pattern).
+---
+
+### Базовий синтаксис
+
+```javascript
+(() => {
+  // Код виконується миттєво та ізольовано
+})();
+```
+
+---
+
+### Приклади в репозиторії
+
+- **[`iife.js`](./iife.js)** - базовий синтаксис IIFE та виклик з параметрами (рекурсивний приклад).
+- **[`firstReason.js`](./firstReason.js)** - Причина 1: Не засмічувати глобальну область видимості (ізоляція змінних).
+- **[`secondReason.js`](./secondReason.js)** - Причина 2: Приватні змінні та замикання (data privacy / encapsulation).
+- **[`thirdReasonA.js`](./thirdReasonA.js)** - Причина 3: Патерн «Модуль» (Module Pattern).
+- **[`thirdReasonB.js`](./thirdReasonB.js)** - Патерн «Відкритий модуль» (Revealing Module Pattern).
+- **[`thirdReasonC.js`](./thirdReasonC.js)** - Впровадження простору імен (Namespace Injection Pattern).
+
